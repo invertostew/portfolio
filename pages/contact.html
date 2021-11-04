@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Stuart Green</title>
+        <title>Contact - Stuart Green</title>
     </head>
     <body>
         <header>
@@ -22,6 +22,46 @@
 
         <main>
             <h3>Contact Me</h3>
+
+            <p>If you have any questions, please reach out using the form below!</p>
+
+            <form>
+                <fieldset>
+                    <legend>Your Details:</legend>
+                    <label>
+                        Name:
+                        <input type="text" value="name" id="name" />
+                    </label>
+
+                    <br />
+                    <br />
+
+                    <label>
+                        Email:
+                        <input type="email" value="email" id="email" />
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback:</legend>
+                    <label>
+                        Reason for contacting:
+                        <select name="reason" id="reason">
+                            <option value="job-opportunity">Job Opportunity</option>
+                            <option value="general-enquiry">General Enquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    
+                    <br />
+                    <br />
+
+                    <label>
+                        Contact Message:
+                        <textarea name="contact-message" id="contact-message" placeholder="Add a short message here!"></textarea>
+                    </label>
+                </fieldset>
+            </form>
         </main>
 
         <footer>
