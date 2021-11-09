@@ -2,81 +2,78 @@
 <html>
     <head>
         <title>Stuart Green</title>
-
+        <!-- Add in Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Fira+Sans&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <header id="header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
                 </ul>
             </nav>
 
-            <figure>
-                <img src="./images/stuart-green-photo.jpg" alt="Photo of the site creator." />
+            <figure class="author__figure">
+                <img src="./images/stuart-green-photo.jpg" alt="Photo of the site creator." class="author__image" />
             </figure>
 
-            <h1>Stuart Green</h1>
-            <h2>Manchester Codes Student - Aspiring Software Engineer</h2>
+            <h1 class="author__heading">Stuart Green</h1>
+            <h2 class="author__sub-heading">Manchester Codes Student - Aspiring Software Engineer</h2>
         </header>
 
-        <br />
-        <hr />
-
-        <main>
+        <main id="main">
             <section id="about-me">
-                <h3>About Me</h3>
-                <p>
-                    I'm Stuart Green, an aspiring software engineer taking the <a href="https://www.manchestercodes.com/" target="_blank">Manchester Codes</a> Software Engineer Fast Track course.
-                </p>
-                <p>
-                    Please feel free to follow me on <a href="https://twitter.com/invertostew" target="_blank">Twitter</a> where I'm currently participating in the #100DaysOfCode challenge!
-                </p>
+                <h3 class="about-me__heading">About Me</h3>
+                <p class="about-me__paragraph">I'm Stuart Green, an aspiring software engineer taking the <a href="https://www.manchestercodes.com/" target="_blank">Manchester Codes</a> Software Engineer Fast Track course.</p>
+                <p class="about-me__paragraph">Please feel free to follow me on <a href="https://twitter.com/invertostew" target="_blank">Twitter</a> where I'm currently participating in the #100DaysOfCode challenge!</p>
             </section>
 
             <section id="qualities">
-                <h3>Qualities</h3>
-                <ol>
-                    <li>Hardworking</li>
-                    <li>Friendly &amp; Approachable</li>
-                    <li>Always looking to improve</li>
+                <h3 class="qualities__heading">Qualities</h3>
+                <ol class="qualities__list">
+                    <li class="qualities__item">Hardworking</li>
+                    <li class="qualities__item">Friendly &amp; Approachable</li>
+                    <li class="qualities__item">Always looking to improve</li>
                 </ol>
             </section>
 
             <section id="hobbies">
-                <h3>Hobbies &amp; Interests</h3>
-                <ul>
-                    <li>Travelling</li>
-                    <li>Road Cycling</li>
-                    <li>Gaming</li>
+                <h3 class="hobbies__heading">Hobbies &amp; Interests</h3>
+                <ul class="hobbies__list">
+                    <li class="hobbies__item">Travelling</li>
+                    <li class="hobbies__item">Road Cycling</li>
+                    <li class="hobbies__item">Gaming</li>
                 </ul>
             </section>
 
             <section id="gallery">
-                <figure>
-                    <img src="https://i.picsum.photos/id/323/400/400.jpg?hmac=8kzqD3LgOM_SscSeRXTXbDzll0RNQUjTHbSlOeJiYvA" alt="Photograph displaying picturesque location." />
+                <figure class="gallery__figure">
+                    <img src="https://i.picsum.photos/id/323/400/400.jpg?hmac=8kzqD3LgOM_SscSeRXTXbDzll0RNQUjTHbSlOeJiYvA" alt="Photograph displaying picturesque location." class="gallery__image" />
                     <br>
-                    <figcaption>
+                    <figcaption class="gallery__figcap">
                         Photo supplied by <a href="https://picsum.photos/" target="_blank">Picsum</a>
                     </figcaption>
                 </figure>
     
-                <figure>
-                    <img src="https://i.picsum.photos/id/877/400/400.jpg?hmac=1GLIHZpu-hjwP6VAuefuYNeMNNCuV9iBmsAMIu9XEE4" alt="Trees in a forested area." />
+                <figure class="gallery__figure">
+                    <img src="https://i.picsum.photos/id/877/400/400.jpg?hmac=1GLIHZpu-hjwP6VAuefuYNeMNNCuV9iBmsAMIu9XEE4" alt="Trees in a forested area." class="gallery__image" />
                     <br>
-                    <figcaption>
+                    <figcaption class="gallery__figcap">
                         Photo supplied by <a href="https://picsum.photos/" target="_blank">Picsum</a>
                     </figcaption>
                 </figure>
             </section>
 
             <section id="projects">
-                <h3>Projects</h3>
+                <h3 class="projects__heading">Projects</h3>
 
-                <table>
+                <table class="projects__table">
                     <thead>
                         <tr>
                             <th>Project</th>
@@ -106,11 +103,10 @@
             </section>
 
             <section id="contact">
-                <h3>Contact Me</h3>
+                <h3 class="contact__heading">Contact Me</h3>
+                <h4 class="contact__sub-heading">If you have any questions, please reach out using the form below!</h4>
 
-                <p>If you have any questions, please reach out using the form below!</p>
-
-                <form>
+                <form class="contact__form">
                     <fieldset>
                         <legend>Your Details:</legend>
                         <label>
@@ -150,8 +146,8 @@
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2021 - Stuart Green</p>
+        <footer id="footer">
+            <p class="footer__paragraph">&copy; 2021 - Stuart Green</p>
         </footer>
     </body>
 </html>

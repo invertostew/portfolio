@@ -1,0 +1,27 @@
+/*
+    Reset browser individual CSS files,
+    Set up default styles.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    Header
+*/
+
+/*
+    Footer
+*/
