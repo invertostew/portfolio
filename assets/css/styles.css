@@ -121,15 +121,6 @@ ol {
 }
 
 /*
-    Main
-*/
-/* #main section:not(:last-of-type) {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgba(242, 242, 242, 0.16);
-} */
-
-/*
     About Me
 */
 #about-me {
@@ -142,7 +133,7 @@ ol {
 }
 
 .about-me__heading {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.35em;
     margin-bottom: 15px;
     line-height: 1;
@@ -179,7 +170,7 @@ ol {
 
 .qualities__heading,
 .hobbies__heading {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.35em;
     margin-bottom: 15px;
     line-height: 1;
@@ -221,4 +212,132 @@ ol {
 
 .gallery__figcap a {
     color: #50fa7b;
+}
+
+/*
+    Projects
+*/
+#projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background-color: #282a36;
+}
+
+.projects__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.projects__table {
+    border-spacing: 10px;
+}
+
+.projects__table th:first-child,
+.projects__table th:last-child {
+    width: 40%;
+}
+
+.projects__table th {
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #44475a;
+}
+
+.projects__table td {
+    text-align: center;
+}
+
+.projects__table tfoot {
+    text-align: center;
+}
+
+.projects__image {
+    max-width: 100%;
+}
+
+/*
+    Contact
+*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background: #50fa7b;
+    color: #282a36;
+}
+
+.contact__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.contact__sub-heading {
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.contact__form {
+    width: 100%;
+    text-align: center;
+}
+
+.contact__form fieldset {
+    border: 0;
+}
+
+.contact__form legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.contact__form label {
+    display: block;
+    width: 100%;
+}
+
+.contact__form label input:not([type="submit"]),
+.contact__form label select,
+.contact__form label textarea {
+    display: block;
+    width: 100%;
+    margin: 8px 0 15px 0;
+    padding: 10px 14px;
+    border: 1px solid #282a36;
+    border-radius: 6px;
+    font-weight: 400;
+    color: #282a36;
+    background-color: #fff;
+}
+
+.contact__form label input::placeholder,
+.contact__form label select::placeholder,
+.contact__form label textarea::placeholder {
+    color: #282a36;
+}
+
+.contact__form label textarea {
+    min-height: 114px;
+}
+
+.contact__form input[type="submit"] {
+    padding: 10px 14px;
+    color: #fff;
+    background-color: #282a36;
+    border: 2px solid #282a36;
+    border-radius: 6px;
+    font-weight: 700;
 }
