@@ -38,7 +38,8 @@ a {
     color: #ff79c6;
 }
 
-ul {
+ul,
+ol {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -50,7 +51,7 @@ ul {
 #header {
     display: grid;
     justify-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .navigation {
@@ -92,21 +93,21 @@ ul {
 .author__image {
     max-width: 100%;
     max-height: 250px;
-    margin: 40px 0;
+    margin: 60px 0 30px 0;
     border-radius: 100%;
     border: 5px solid #ff79c6;
 }
 
 .author__heading {
     font-weight: 700;
-    padding: 0 20px;
+    padding: 0 30px;
     margin-bottom: 10px;
     line-height: 1;
 }
 
 .author__sub-heading {
     font-weight: 400;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: center;
     line-height: 1.3;
 }
@@ -115,6 +116,109 @@ ul {
     Footer
 */
 #footer {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+}
+
+/*
+    Main
+*/
+/* #main section:not(:last-of-type) {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.16);
+} */
+
+/*
+    About Me
+*/
+#about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background-color: #6272a4;
+}
+
+.about-me__heading {
+    font-weight: 400;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.about-me__paragraph {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about-me__paragraph a {
+    color: #50fa7b;
+}
+
+.about-me__paragraph:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+/*
+    Qualities / Hobbies
+*/
+#qualities,
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #282a36;
+}
+
+#qualities {
+    padding: 30px;
+}
+
+.qualities__heading,
+.hobbies__heading {
+    font-weight: 400;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.qualities__item,
+.hobbies__item {
+    text-align: center;
+}
+
+.qualities__item:not(:last-of-type),
+.hobbies__item:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+#hobbies {
+    padding: 0 30px 30px 30px;
+}
+
+/*
+    Gallery
+*/
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 60px 30px;
+    background-color: #6272a4;
+}
+
+.gallery__image {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.gallery__figcap {
+    text-align: center;
+}
+
+.gallery__figcap a {
+    color: #50fa7b;
 }
