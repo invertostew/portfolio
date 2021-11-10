@@ -203,6 +203,9 @@ ol {
 
 .gallery__image {
     max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
     margin-bottom: 15px;
 }
 
@@ -340,4 +343,21 @@ ol {
     border: 2px solid #282a36;
     border-radius: 6px;
     font-weight: 700;
+}
+
+/*
+    Tablet Queries
+*/
+@media screen and (min-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects__table {
+        border-spacing: 30px;
+    }
+
+    .projects__table th {
+        padding-bottom: 15px;
+    }
 }
