@@ -1,4 +1,4 @@
-# Portfolio Project - Programming Foundations, HTML
+# Programming Foundations - HTML & CSS
 
 ### Objective:
 Work through the HTML module on the [Manchester Codes Platform](https://platform.manchestercodes.com/).
