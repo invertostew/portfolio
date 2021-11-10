@@ -1,0 +1,363 @@
+/*
+    Reset browser individual CSS files,
+    Set up default styles.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    min-height: inherit;
+    background-color: #282a36;
+    color: #f2f2f2;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    color: #ff79c6;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*
+    Header
+*/
+#header {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 60px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    background-color: #282a36;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation__item {
+    flex: 1 1 0;
+}
+
+.navigation__link {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation__link[href="#contact"] {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.author__figure {
+    padding-top: 62px;
+}
+
+.author__image {
+    max-width: 100%;
+    max-height: 250px;
+    margin: 60px 0 30px 0;
+    border-radius: 100%;
+    border: 5px solid #ff79c6;
+}
+
+.author__heading {
+    font-weight: 700;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.author__sub-heading {
+    font-weight: 400;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/*
+    Footer
+*/
+#footer {
+    padding: 30px;
+    text-align: center;
+}
+
+/*
+    About Me
+*/
+#about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background-color: #6272a4;
+}
+
+.about-me__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.about-me__paragraph {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.about-me__paragraph a {
+    color: #50fa7b;
+}
+
+.about-me__paragraph:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+/*
+    Qualities / Hobbies
+*/
+#qualities,
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #282a36;
+}
+
+#qualities {
+    padding: 30px;
+}
+
+.qualities__heading,
+.hobbies__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.qualities__item,
+.hobbies__item {
+    text-align: center;
+}
+
+.qualities__item:not(:last-of-type),
+.hobbies__item:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+#hobbies {
+    padding: 0 30px 30px 30px;
+}
+
+/*
+    Gallery
+*/
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 60px 30px;
+    background-color: #6272a4;
+}
+
+.gallery__image {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 15px;
+}
+
+.gallery__figcap {
+    text-align: center;
+}
+
+.gallery__figcap a {
+    color: #50fa7b;
+}
+
+/*
+    Projects
+*/
+#projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background-color: #282a36;
+}
+
+.projects__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.projects__table {
+    border-spacing: 10px;
+}
+
+.projects__table th:first-child,
+.projects__table th:last-child {
+    width: 40%;
+}
+
+.projects__table th {
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #44475a;
+}
+
+.projects__table td {
+    text-align: center;
+}
+
+.projects__table tfoot {
+    text-align: center;
+}
+
+.projects__image {
+    max-width: 100%;
+}
+
+/*
+    Contact
+*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background: #50fa7b;
+    color: #282a36;
+}
+
+.contact__heading {
+    font-weight: 700;
+    font-size: 1.35em;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.contact__sub-heading {
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.contact__form {
+    width: 100%;
+    text-align: center;
+}
+
+.contact__form fieldset {
+    border: 0;
+}
+
+.contact__form legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.contact__form label {
+    display: block;
+    width: 100%;
+}
+
+.contact__form label input:not([type="submit"]),
+.contact__form label select,
+.contact__form label textarea {
+    display: block;
+    width: 100%;
+    margin: 8px 0 15px 0;
+    padding: 10px 14px;
+    border: 1px solid #282a36;
+    border-radius: 6px;
+    font-weight: 400;
+    color: #282a36;
+    background-color: #fff;
+}
+
+.contact__form label input::placeholder,
+.contact__form label select::placeholder,
+.contact__form label textarea::placeholder {
+    color: #282a36;
+}
+
+.contact__form label textarea {
+    min-height: 114px;
+}
+
+.contact__form input[type="submit"] {
+    padding: 10px 14px;
+    color: #fff;
+    background-color: #282a36;
+    border: 2px solid #282a36;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/*
+    Tablet Queries
+*/
+@media screen and (min-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .projects__table {
+        border-spacing: 30px;
+    }
+
+    .projects__table th {
+        padding-bottom: 15px;
+    }
+}
