@@ -365,6 +365,20 @@ ol {
     Tablet Queries
 */
 @media screen and (min-width: 1024px) {
+    #about-me {
+        padding: 60px 30px;
+    }
+
+    #qualities-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #qualities,
+    #hobbies {
+        padding: 60px 30px;
+    }
+
     #gallery {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -375,5 +389,29 @@ ol {
 
     .projects__table th {
         padding-bottom: 15px;
+    }
+
+    #projects {
+        padding: 60px 30px;
+    }
+
+    #contact {
+        padding: 60px;
+    }
+
+    .contact__form {
+        max-width: 860px;
+    }
+
+    .contact__form fieldset:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    
+    .contact__form fieldset legend {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 }
