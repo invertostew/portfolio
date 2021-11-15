@@ -79,11 +79,22 @@ ol {
     text-decoration: none;
     text-align: center;
     padding: 20px;
+    transition: 0.25s all ease-in-out;
 }
 
 .navigation__link[href="#contact"] {
     background-color: #50fa7b;
     color: #282a36;
+}
+
+.navigation__link:hover {
+    background-color: #ff79c6;
+    color: #fff;
+}
+
+.navigation__link[href="#contact"]:hover {
+    background-color: #ff79c6;
+    color: #fff;
 }
 
 .author__figure {
@@ -96,6 +107,11 @@ ol {
     margin: 60px 0 30px 0;
     border-radius: 100%;
     border: 5px solid #ff79c6;
+    transition: 0.5s all ease-in-out;
+}
+
+.author__image:hover {
+    transform: scale(1.05) rotate(-5deg);
 }
 
 .author__heading {
@@ -349,6 +365,20 @@ ol {
     Tablet Queries
 */
 @media screen and (min-width: 1024px) {
+    #about-me {
+        padding: 60px 30px;
+    }
+
+    #qualities-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #qualities,
+    #hobbies {
+        padding: 60px 30px;
+    }
+
     #gallery {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -359,5 +389,29 @@ ol {
 
     .projects__table th {
         padding-bottom: 15px;
+    }
+
+    #projects {
+        padding: 60px 30px;
+    }
+
+    #contact {
+        padding: 60px;
+    }
+
+    .contact__form {
+        max-width: 860px;
+    }
+
+    .contact__form fieldset:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    
+    .contact__form fieldset legend {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 }
