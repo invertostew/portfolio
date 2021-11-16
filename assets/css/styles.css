@@ -360,6 +360,7 @@ ol {
     border: 2px solid #282a36;
     border-radius: 6px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /*
