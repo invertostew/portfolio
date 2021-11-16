@@ -60,6 +60,7 @@ ol {
     background-color: #282a36;
     width: 100%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 999;
 }
 
 .navigation__list {
